@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Nutritional Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>AI Nutritional Assessment</h2>
+
+    <form method="post" action="/predict">
+        <input type="number" name="age" placeholder="Age" required>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+
+        <input type="number" name="height" placeholder="Height (cm)" required>
+        <input type="number" name="weight" placeholder="Weight (kg)" required>
+
+        <select name="activity" required>
+            <option value="">Activity Level</option>
+            <option value="0">Low</option>
+            <option value="1">Medium</option>
+            <option value="2">High</option>
+        </select>
+
+        <button type="submit">Assess</button>
+    </form>
+</div>
+
+</body>
+</html>

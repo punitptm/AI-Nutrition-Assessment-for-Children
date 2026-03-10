@@ -1,0 +1,14 @@
+food,calories,protein,diet_type,category
+Idli,58,2,Veg,Breakfast
+Dosa,168,4,Veg,Breakfast
+Egg Omelette,154,11,Egg,Breakfast
+Chapati,120,3,Veg,Lunch
+Rice,206,4,Veg,Lunch
+Dal,198,12,Veg,Lunch
+Vegetable Curry,150,5,Veg,Lunch
+Fruit Bowl,100,2,Veg,Snack
+Boiled Egg,78,6,Egg,Snack
+Milk,103,8,Veg,Snack
+Vegetable Soup,90,3,Veg,Dinner
+Paneer Curry,260,14,Veg,Dinner
+Grilled Chicken,284,27,Non-Veg,Dinner

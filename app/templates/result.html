@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #43e97b, #38f9d7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #43e97b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #28c76f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Nutritional Status</h2>
+    <h3>{{ result }}</h3>
+
+    <h4>Recommended Meals</h4>
+    <ul>
+        {% for meal in meals %}
+            <li>{{ meal.food }} ({{ meal.category }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</div>
+
+</body>
+</html>
