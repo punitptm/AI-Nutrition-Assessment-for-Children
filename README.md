@@ -88,30 +88,6 @@ The dataset is used to train the machine learning model.
 
 ---
 
-## Project Structure
-
-AI_Nutrition_Project
-│
-├── app
-│ ├── app.py
-│ ├── templates
-│ │ ├── index.html
-│ │ └── result.html
-│
-├── data
-│ ├── child_health.csv
-│ └── food_nutrition.csv
-│
-├── model
-│ └── nutrition_model.pkl
-│
-├── notebooks
-│ └── model_training.ipynb
-│
-└── README.md
-
----
-
 ## How to Run the Project
 
 ### Step 1: Clone the repository
